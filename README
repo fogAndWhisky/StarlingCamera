@@ -1,0 +1,16 @@
+This is a simple view component for the Starling AS3 Framework that allows you to integrate a Camera with the rest of Starling's display list.
+Look at the Main and MainView classes for a simple tutorial.
+
+StarlingCamera supports:
+- Arbitrary size of camera
+- Mirroring of the camera view
+- Arbitrary framerate of the display for optimized performance
+- Downsampling of the camera display for optimized performance
+- A rotate flag to handle a bug on mobile AIR
+- Full-resolution snapshot call (getImage())
+
+Known issues:
+- On IOS, the front-facing camera is higher resolution than the rear camera. This makes the image seem unnaturally zoomed.
+ I'll post a fix when I can.
+- A bug on Air for IOS causes the camera to rotate 90 degrees. This is handled in StarlingCamera by allowing the developer
+ to pass in a rotate flag as part of the init() method.
