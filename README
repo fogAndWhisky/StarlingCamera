@@ -1,3 +1,5 @@
+THIS IS VERY OLD CODE AND NO LONGER MAINTAINED. USE AT YOUR OWN RISK.
+
 This is a simple view component for the Starling AS3 Framework that allows you to integrate a Camera with the rest of Starling's display list.
 Look at the Main and MainView classes for a simple tutorial.
 
