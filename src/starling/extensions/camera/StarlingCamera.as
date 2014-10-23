@@ -130,13 +130,15 @@ package starling.extensions.camera
             camera = Camera.getCamera(cameraId.toString());
             if (camera)
             {
-                camera.setMode(screenRect.height, screenRect.width, fps);
+               
                 if (rotate)
                 {
+                    camera.setMode(screenRect.height, screenRect.width, fps);
                     video = new Video(screenRect.height, screenRect.width);
                 }
                 else
                 {
+                     camera.setMode(screenRect.width, screenRect.height, fps);
                      video = new Video(screenRect.width, screenRect.height);
                 }
                 video.attachCamera(camera);
